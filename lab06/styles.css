@@ -1,8 +1,18 @@
-body { font-family: Verdana, Geneva, sans serif; }
+body {
+     font-family: Verdana, Geneva, sans serif; 
+     }
 
-h1, h2 { color: darkslategray}
+h1, h2 { 
+       color: darkslategray
+       }
 
-.evenrow { background-color: mediumaquamarine}
+.evenrow {
+         background-color: mediumaquamarine 
+         }
 
-h1 { font-family: 72 em}
-h2 { font-family: 36 em} 
+h1 {
+   font-family: 72em
+   }
+h2 {
+   font-family: 36em
+   } 
