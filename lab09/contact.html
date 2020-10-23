@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact</title>
         <link rel="stylesheet" href="styles.css">
       <style>
@@ -18,7 +19,7 @@
 }
 
 .flex-item-left {
-  background-color: #B3C8E5;
+  background-color: #fff9e6;
   padding: 20px;
   flex: 50%;
   border-radius: 2em;
@@ -26,7 +27,7 @@
 }
 
 .flex-item-right {
-  background-color: #B3C8E5;
+  background-color: #fff9e6;
   padding: 20px;
   flex: 50%;
   border-radius: 2em;
@@ -44,13 +45,18 @@
   position: relative;
   left: 3cm;
 }
-.div3 {
+
+.flex-container {
   display: flex;
+  flex-wrap: wrap;
 }
-.div4 {
-  position: relative;
-  left: 3cm;
+.flex-container > div {
+  margin: 10px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 15px;
 }
+
       </style>
     </head>
 
@@ -81,6 +87,7 @@
         </div>
         </div>
         <div class="flex-item-right">
+        <div class="flex-container">
         <div class="div3">
         <form action="mailto:kjohns63@syr.edu" method="post">
             <label for="fname">First name:</label><br>
@@ -108,6 +115,7 @@
             <div class="div4">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.044533428742!2d-76.11730058460736!3d43.01944980119672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3623d4e2173%3A0x80da5bda2cb74d45!2s460%20Slocum%20Dr%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1599610734276!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
+            </div>
             </div>
             </div>
     </body>
