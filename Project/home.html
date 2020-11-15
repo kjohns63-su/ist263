@@ -124,6 +124,22 @@ div.desc {
   text-align: left;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
      </style>
    </head>
 
@@ -180,22 +196,18 @@ div.desc {
     
     <div class="clearfix"></div>
 
-    <div class="row">
-      <div class="column">
-        <h2>Free deliveries on orders over 30$</h2>
+    <div class="clearfix"></div>
+      <div class="box" style="background-color:#C97C5D">
+      <p>Free deliveries on orders over $30</p>
       </div>
-      
-      <div class="column">
-        <h2>Great Customer Service</h2>
+      <div class="box" style="background-color:#B36A5E">
+      <p>Great Customer Service</p>
       </div>
-      
-      <div class="column">
-        <h2>Sustainability-sustainable materials are used whenever possible</h2>
+      <div class="box" style="background-color:#C97C5D">
+      <p>Sustainable materials used whenever possible</p>
       </div>
     </div>
 
-
-      
     <div class="footer">
         <h3>Subscribe and Save</h3>
         <p>Sign up to our newsletter to get 10% off your next purchase, plus receive early access to new arrivals, exclusive sales and more.</p>
