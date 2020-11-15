@@ -39,6 +39,52 @@
   color: black;
 }
 
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
      </style>
    </head>
@@ -55,6 +101,45 @@
       <a href="https://kjohns63-su.github.io/ist263/project/tapestry.html">Tapestries</a>
       <a href="https://kjohns63-su.github.io/ist263/Project/contact.html">Contact</a>
     </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../Media/tiger.jpg">
+          <img src="../Media/tiger.jpg" alt="Tiger Tapestry" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../Media/green.jpg">
+          <img src="../Media/green.jpg" alt="Beautiful Girl" width="600" height="400">
+        </a>
+        <div class="desc">Beautiful Girl Print</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../Media/yellow.jpg">
+          <img src="../Media/yellow.jpg" alt="Sunshine Collage Kit" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../Media/purple.jpg">
+          <img src="../Media/purple.jpg" alt="Dessert Print" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
 
        <div class="card">
         <img src="../Media/green.jpg" alt="Beautiful Girl" style="width:100%">
