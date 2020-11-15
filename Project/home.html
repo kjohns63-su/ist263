@@ -94,6 +94,24 @@ div.desc {
   clear: both;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
      </style>
    </head>
 
@@ -149,6 +167,20 @@ div.desc {
     </div>
     
     <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Free deliveries on orders over 30$</h2>
+      </div>
+      
+      <div class="column">
+        <h2>Great Customer Service</h2>
+      </div>
+      
+      <div class="column">
+        <h2>Sustainability-sustainable materials are used whenever possible</h2>
+      </div>
+    </div>
 
 
        <p>Free deliveries on orders over $30</p>
